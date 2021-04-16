@@ -6,7 +6,7 @@ Resources:
       InstanceType: 't2.micro'
       ImageId: 'ami-0cc293023f983ed53'
       SecurityGroupsIds:
-        - ?????
+        - !Ref MySecurityGroup
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
