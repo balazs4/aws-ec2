@@ -5,3 +5,5 @@ Resources:
     Properties:
       InstanceType: 't2.micro'
       ImageId: 'ami-0cc293023f983ed53'
+      SecurityGroupsIds:
+        - ?????
