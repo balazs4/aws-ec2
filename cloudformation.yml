@@ -17,3 +17,4 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: '0.0.0.0/0' 
+      # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
