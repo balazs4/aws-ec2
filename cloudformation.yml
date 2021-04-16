@@ -7,7 +7,7 @@ Resources:
       ImageId: 'ami-0cc293023f983ed53'
       SecurityGroupsIds:
         - !Ref MySecurityGroup
-      Keyname: 'my-harcoded-ssh-key-pair'
+      Keyname: 'my-harcoded-ssh-key-pair' # 😥
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
