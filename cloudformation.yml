@@ -7,3 +7,8 @@ Resources:
       ImageId: 'ami-0cc293023f983ed53'
       SecurityGroupsIds:
         - ?????
+
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+
