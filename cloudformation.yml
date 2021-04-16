@@ -1,6 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
-  <logical-id>:
-    Type: <resource-type>
+  MyDemoInstance:
+    Type: AWS::EC2::Instance
     Properties:
-      <key>: <value>
+      InstanceType: 't2.micro'
+      ImageId: 'ami-0cc293023f983ed53'
