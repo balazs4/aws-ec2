@@ -1,1 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  <logical-id>:
+    Type: <resource-type>
+    Properties:
+      <key>: <value>
