@@ -13,6 +13,15 @@ Resources:
         - !Ref MySecurityGroup
       KeyName: !Ref MyKeyPair # 😅
 
+  MyDemoInstance2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: 't2.small'
+      ImageId: 'ami-0cc293023f983ed53'
+      SecurityGroupIds:
+        - !Ref MySecurityGroup
+      KeyName: !Ref MyKeyPair # 😅
+
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -23,3 +32,7 @@ Resources:
           ToPort: 22
           CidrIp: '0.0.0.0/0' 
       # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
+      
+Outputs:
+  DemoInstance:
+    Value: !GetAtt 'MyDemoInstance.PublicIp'
