@@ -11,7 +11,7 @@ Resources:
       ImageId: 'ami-0cc293023f983ed53'
       SecurityGroupsIds:
         - !Ref MySecurityGroup
-      Keyname: !Ref MyKeyPair # 😅
+      KeyName: !Ref MyKeyPair # 😅
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
